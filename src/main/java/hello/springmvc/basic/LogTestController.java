@@ -14,8 +14,14 @@ public class LogTestController {
     public String logTest(){
         String name = "spring";
         System.out.println("name = "+name);
-        log.info("info log={}",name);
 
+        log.trace("trace logs={}",name);
+        log.debug("info logs={}",name);
+        log.warn("warn logs={}",name);
+        log.info("info log={}",name);
+        log.error("error logs={}",name);
+
+        log.debug("String concat log=" +name);
         return "ok";
     }
 }
