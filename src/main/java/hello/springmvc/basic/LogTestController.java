@@ -13,13 +13,13 @@ public class LogTestController {
     @RequestMapping("/log-test")
     public String logTest(){
         String name = "spring";
-        System.out.println("name = "+name);
+        System.out.println("name = "+name); //특정 로그만 남기고 싶기 때문에 sysout을 쓰지 말자.
 
         log.trace("trace logs={}",name);
         log.debug("info logs={}",name);
         log.warn("warn logs={}",name);
         log.info("info log={}",name);
-        log.error("error logs={}",name);
+        log.error("error logs={}",name); //아래로 갈 수록 level이 높아지는 것
 
         log.debug("String concat log=" +name);
         return "ok";
