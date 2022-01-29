@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Slf4j //lombok 제공. log.~~ 사용가능
+@Slf4j //lombok 제공. log.~~
 @RestController
 public class LogTestController {
     //private final Logger log = LoggerFactory.getLogger(getClass()); //LogTestController.class
