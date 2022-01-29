@@ -19,7 +19,7 @@ public class LogTestController {
         log.debug("info logs={}",name);
         log.warn("warn logs={}",name);
         log.info("info log={}",name);
-        log.error("error logs={}",name); //아래로 갈 수록 level이 높아지는 것
+        log.error("error logs={}",name); //아래로 갈 수록 level이 >>..
 
         log.debug("String concat log=" +name);
         return "ok";
