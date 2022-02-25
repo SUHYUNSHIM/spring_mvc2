@@ -1,5 +1,6 @@
 package hello.springmvc.basic.response;
 
+
 import hello.springmvc.basic.HelloData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
